@@ -1,7 +1,7 @@
 import random
+# def again():
 print("Welcome to Our Number Guessing Game. \nYou can set lower bound and upper bound to guess a number in " \
 "that range. You will get 6 chances to guess.")
-
 low = int(input("Enter lower bound"))
 high = int(input("Enter higher bound"))
 f = random.randint(low,high)
@@ -23,3 +23,9 @@ while gc<ch:
     else:
         print("Your guess is low\n")   
     
+# a= str(input("Do you want to play this game? Type Y for Yes\n"))
+# print(a)
+# if str.upper(a) == "Y":
+#     again()
+
+
