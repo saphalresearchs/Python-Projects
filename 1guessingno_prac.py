@@ -15,4 +15,28 @@ def play():
             print("Format error. Counting as a incorrect guess ...")
             continue
         if target == guess:
-            print("Your guess is correct. Attempt")
+            print(f"Your guess is correct. {i} Attempt taken.")
+            return
+        elif target > guess:
+            print("Your Guess is low")
+        else:
+            print("Your guess is High")
+    print(f"Game Over! The Correct number was {target}")
+
+def play_again():
+    while True:
+        choice = input("Do you want to play again(y/n)?").lower().strip()
+        if choice == "y":
+            return True
+        if choice == "n":
+            return False
+        print("Enter y for yes and n for no")
+
+if __name__== "__main__":
+    playing=True
+    while playing:
+        play()
+        playing = play_again()
+
+    print("Thanks for Playing. Goodbye!!")
+
